@@ -126,22 +126,13 @@ section{position:relative;z-index:1;padding:6rem 2rem}
 .ach-sub{font-size:0.82rem;color:var(--muted)}
 .ach-year{position:absolute;top:1rem;right:1rem;font-size:0.7rem;color:var(--cyan);font-family:'Orbitron',monospace}
  
-/* ── CERTIFICATIONS ── */
-.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
-.cert-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1.25rem;display:flex;align-items:center;gap:1rem;transition:all 0.3s}
-.cert-card:hover{border-color:rgba(139,92,246,0.4)}
-.cert-icon{width:40px;height:40px;border-radius:8px;background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem}
-.cert-name{font-size:0.875rem;font-weight:500;color:var(--text)}
-.cert-org{font-size:0.75rem;color:var(--muted);margin-top:0.25rem}
- 
-/* ── EXTRAS ── */
-.extras-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
-.extra-item{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:1rem;text-align:center;transition:all 0.3s}
-.extra-item:hover{border-color:rgba(6,182,212,0.3)}
-.extra-icon{font-size:1.5rem;margin-bottom:0.5rem}
-.extra-text{font-size:0.82rem;color:#94a3b8}
- 
 /* ── CONTACT ── */
+.contact-box{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:3rem;text-align:center;max-width:600px;margin:0 auto;position:relative;overflow:hidden}
+.contact-box::before{content:'';position:absolute;inset:-50%;background:radial-gradient(circle at center,rgba(6,182,212,0.06),transparent 60%)}
+.contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2rem}
+.contact-link{display:inline-flex;align-items:center;gap:0.5rem;padding:0.75rem 1.5rem;border:1px solid var(--border);border-radius:8px;color:var(--text);text-decoration:none;font-size:0.875rem;transition:all 0.3s;background:rgba(255,255,255,0.02)}
+.contact-link:hover{border-color:var(--cyan);color:var(--cyan);background:rgba(6,182,212,0.06)}
+.contact-link svg{width:16px;height:16px}
 .contact-box{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:3rem;text-align:center;max-width:600px;margin:0 auto;position:relative;overflow:hidden}
 .contact-box::before{content:'';position:absolute;inset:-50%;background:radial-gradient(circle at center,rgba(6,182,212,0.06),transparent 60%)}
 .contact-links{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2rem}
@@ -224,46 +215,4 @@ footer{position:relative;z-index:1;text-align:center;padding:2rem;border-top:1px
 /* Glow on buttons */
 .btn-primary:hover {
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
-}
-
-/* Dark mode toggle button */
-#theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1000;
-  transition: all 0.3s;
-}
-
-#theme-toggle:hover {
-  border-color: var(--cyan);
-  box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
-}
-
-/* Light mode variables */
-body.light-mode {
-  --bg: #f8fafc;
-  --surface: rgba(255, 255, 255, 0.9);
-  --card: rgba(0, 0, 0, 0.02);
-  --border: rgba(6, 182, 212, 0.2);
-  --text: #1e293b;
-  --muted: #64748b;
-}
-
-body.light-mode nav {
-  background: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .mobile-menu {
-  background: rgba(255, 255, 255, 0.97);
 }

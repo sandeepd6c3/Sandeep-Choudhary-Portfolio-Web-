@@ -3,29 +3,35 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<<<<<<< HEAD
-<title>Sandeep Choudhary</title>
-=======
 <title>Sandeep Choudhary — Full-Stack AI Engineer</title>
->>>>>>> b1e6c22b2d14ee9bf8e6cf5c5c90cb39623c3a47
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="style.css" rel="stylesheet"/>
 </head>
-</head>
 <body>
-<<<<<<< HEAD
-  
-=======
- 
->>>>>>> b1e6c22b2d14ee9bf8e6cf5c5c90cb39623c3a47
+
 <!-- SCROLL PROGRESS -->
 <div id="scroll-progress"></div>
- 
+
 <!-- SPLASH -->
 <div id="splash">
   <div class="monogram">SC</div>
   <div class="splash-title">Initializing Portfolio</div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+</div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#education" onclick="closeMobile()">Education</a>
+  <a href="#skills" onclick="closeMobile()">Skills</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#achievements" onclick="closeMobile()">Achievements</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+</div>
   <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
 </div>
  
@@ -309,64 +315,36 @@
 </section>
  
 <div class="divider"></div>
- 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="container">
-    <div class="section-tag reveal">Verified Learning</div>
-    <h2 class="section-title reveal">Certifications</h2>
-    <div class="section-line reveal"></div>
-    <div class="certs-grid">
-      <div class="cert-card reveal">
-        <div class="cert-icon">📘</div>
-        <div>
-          <div class="cert-name">Problem Solving through C Programming</div>
-          <div class="cert-org">NPTEL</div>
-        </div>
-      </div>
-      <div class="cert-card reveal reveal-delay-1">
-        <div class="cert-icon">🗄️</div>
-        <div>
-          <div class="cert-name">Database Management System</div>
-          <div class="cert-org">NPTEL</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
-<!-- EXTRAS -->
-<section id="extras">
-  <div class="container">
-    <div class="section-tag reveal">Beyond Code</div>
-    <h2 class="section-title reveal">Extracurriculars</h2>
-    <div class="section-line reveal"></div>
-    <div class="extras-grid">
-      <div class="extra-item reveal">
-        <div class="extra-icon">🏃</div>
-        <div class="extra-text">State-Level Kabaddi Player — Competitive sportsman with two championship titles</div>
-      </div>
-      <div class="extra-item reveal reveal-delay-1">
-        <div class="extra-icon">🏸</div>
-        <div class="extra-text">Badminton — Active hobby for fitness and focus</div>
-      </div>
-      <div class="extra-item reveal reveal-delay-2">
-        <div class="extra-icon">🎵</div>
-        <div class="extra-text">Music — Listening to music for creativity and relaxation</div>
-      </div>
-      <div class="extra-item reveal reveal-delay-3">
-        <div class="extra-icon">🎓</div>
-        <div class="extra-text">Event Organizer — Stage performances at college cultural fests</div>
-      </div>
-    </div>
-  </div>
-</section>
- 
-<div class="divider"></div>
- 
+
 <!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-tag reveal" style="text-align:center">Let's Connect</div>
+    <h2 class="section-title reveal" style="text-align:center">Get In Touch</h2>
+    <div class="section-line reveal" style="margin:0 auto 3rem"></div>
+    <div class="contact-box reveal">
+      <p style="color:#94a3b8;font-size:1rem;line-height:1.75">I'm actively seeking internships and collaborative opportunities. Whether you have a project in mind or just want to say hi — my inbox is always open.</p>
+      <div class="contact-links">
+        <a href="mailto:sandeep977244@gmail.com" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          sandeep977244@gmail.com
+        </a>
+        <a href="tel:+919772449711" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 10.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 0h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 7.91a16 16 0 0 0 6.29 6.29l1.27-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 9772449711
+        </a>
+        <a href="https://linkedin.com/in/sandeepchoudhary97" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/sandeepd6c3" target="_blank" class="contact-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="contact">
   <div class="container">
     <div class="section-tag reveal" style="text-align:center">Let's Connect</div>
@@ -403,7 +381,5 @@
 </footer>
  
 <script src="script.js"></script>
-</body>
-</html>
 </body>
 </html>

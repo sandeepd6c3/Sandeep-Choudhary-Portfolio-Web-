@@ -138,17 +138,6 @@ window.addEventListener('scroll', () => {
   canvas.style.transform = `translateY(${rate}px)`;
 });
 
-// Theme toggle
-const themeToggle = document.createElement('div');
-themeToggle.id = 'theme-toggle';
-themeToggle.innerHTML = '🌙';
-document.body.appendChild(themeToggle);
-
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
-  themeToggle.innerHTML = document.body.classList.contains('light-mode') ? '☀️' : '🌙';
-});
-
 // Smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
